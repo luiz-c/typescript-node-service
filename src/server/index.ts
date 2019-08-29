@@ -22,7 +22,7 @@ async function initialize() {
 
     registerService();
 
-    const interval = setInterval(registerService, (Config.serviceTimeout/2));
+    const interval = setInterval(registerService, (Config.serviceTimeout * 500));
     const cleanup = async () => {
       let clean = false;
       if (!clean) {
